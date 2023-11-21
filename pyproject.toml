@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dsp-project"
+version = "0.1.0"
+description = ""
+authors = ["Tanner Koza <kozatanner@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dsp_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.2"
+scipy = "^1.11.4"
+navtools = {git = "https://github.com/tannerkoza/navtools.py.git"}
+matplotlib = "^3.8.2"
+tqdm = "^4.66.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.26.0"
+pandas = "^2.1.3"
+black = "^23.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
