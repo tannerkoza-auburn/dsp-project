@@ -111,6 +111,7 @@ def main():
 
     for population, data in raw_signal_data.items():
         if type(data) is np.ndarray:
+            population_key = f"{population}_features"
             data = data.flatten()
 
             if IS_SUBSET_PERCENTAGE:
@@ -121,7 +122,7 @@ def main():
             people_indices = np.random.choice(data.size, size=npeople, replace=False)
             data = data[people_indices]
 
-            features[population] = extract_features(
+            features[population_key] = extract_features(
                 population_name=population, data=data
             )
 
