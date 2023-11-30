@@ -5,7 +5,7 @@ This document serves to explain how to generate features in Python for classifyi
 ## Usage
 
 1. Open this project in a shell of your choice. Make sure you're in the `dsp-project/` directory.
-2. Install packages.
+2. Install packages. It is recommended to use a virtual environment.
 
 ```shell
 pip install -r requirements.txt
