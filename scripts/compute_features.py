@@ -1,6 +1,5 @@
 import numpy as np
 import pathlib as pl
-import matplotlib.pyplot as plt
 
 from scipy import signal
 from scipy.io import loadmat, savemat
@@ -18,7 +17,7 @@ PERCENTAGE_OF_POPULATION = 100
 NPEOPLE = 175
 
 # Principal Component Analysis
-N_COMPONENTS = 10  # 10
+N_COMPONENTS = 10
 
 # Gaussian Blur
 SIGMA = 0.001
@@ -132,16 +131,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-# def plot():
-#     _, (pxx_ax0, pxx_ax1) = plt.subplots(nrows=1, ncols=2, sharey=True)
-#         pxx_ax0.semilogy(frange, pxx[:, 0:10])
-#         pxx_ax1.semilogy(frange_standardized, pxx_standardized[:, 0:10])
-
-#         _, signal_ax = plt.subplots()
-#         signal_ax.plot(person0[:, 0], "r")
-#         signal_ax.plot(filtered_person0[:, 0], "g")
-#         signal_ax.plot(standardized_person0[:, 0], "b")
-#         signal_ax.plot(normalized_person0[:, 0], "m")
-#         plt.show()
