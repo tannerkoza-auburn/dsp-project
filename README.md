@@ -23,4 +23,4 @@ python3 scripts/compute_features.py
 
 5. Load `data/features.mat` in MATLAB and process accordingly.
 
-> **ALSO:** The MATLAB script `scripts/test_features.m` was used to validate performance.
+   > **ALSO:** The MATLAB script `scripts/test_features.m` was used to validate performance.
